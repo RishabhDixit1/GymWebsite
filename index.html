@@ -1,52 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RDS Fitness Club</title>
-    
+
 </head>
 <link rel="stylesheet" href="css/style.css">
 <style>
-    body{
+    body {
         color: white;
         margin: 0px;
         padding: 0px;
         background: url('img/abs-1850926_1920.jpg');
         height: 1200px;
-       
+
     }
-    .left{
+
+    .left {
+        display: inline-block;
         border: 2px solid red;
+        position: absolute;
+        left: 10px;
+        top: 20px;
 
     }
-    .Mid{
+    .left img{
+        width: 100px;
+        height: 70px;
+    
+        filter: invert(100%);
+    }
+
+    .Mid {
         border: 2px solid yellow;
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+        
 
     }
-    .right{
+
+    .right {
+        display: inline-block;
         border: 2px solid green;
-        float: right;
+        position: absolute;
+        right: 10px;
+        top: 20px;
 
     }
+    .navbar{
+        
+        display: inline-block;
+        
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+        
+        
+    }
+    .navbar li a{
+        
+        color: white;
+        text-decoration: none;
+        padding: 30px;
+        
+    }
+    .navbar li a:hover, .navbar li a.active{
+        
+        
+        text-decoration: underline;
+        color: aquamarine;
+        
+        
+    }
+    
 </style>
+
 <body>
     <!-- Gym Website -->
     <header class="header">
         <!-- Left box for logo -->
-      
+
         <div class="left">
-            I am Left
+            <img src="img/gymlogo.png" alt="">
+           
 
         </div>
         <!-- Mid box for navbar -->
-        
+
         <div class="Mid">
-            I am Mid
+        
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Calc</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
 
         </div>
-    
+
         <!-- Right box for buttons -->
         <div class="right">
             I am Right
@@ -55,4 +111,5 @@
 
     </header>
 </body>
+
 </html>
