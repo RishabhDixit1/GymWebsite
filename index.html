@@ -8,9 +8,13 @@
     <title>RDS Fitness Club</title>
 
 </head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <style>
     body {
+        font-family: 'Lora', serif;
         color: white;
         margin: 0px;
         padding: 0px;
@@ -23,15 +27,26 @@
         display: inline-block;
         border: 2px solid red;
         position: absolute;
-        left: 10px;
+        left: 65px;
         top: 20px;
 
     }
-    .left img{
+
+    .left img {
         width: 100px;
         height: 70px;
-    
-        filter: invert(100%);
+        cursor: pointer;
+
+
+
+    }
+
+    .left img:hover {
+        color: blueviolet;
+    }
+
+    .left div {
+        text-align: center;
     }
 
     .Mid {
@@ -39,45 +54,102 @@
         display: block;
         width: 40%;
         margin: 20px auto;
-        
+
 
     }
 
     .right {
         display: inline-block;
-        border: 2px solid green;
+        
         position: absolute;
-        right: 10px;
+        right: 30px;
         top: 20px;
 
     }
-    .navbar{
-        
+
+    .navbar {
+
         display: inline-block;
-        
+
     }
-    .navbar li{
+
+    .navbar li {
         display: inline-block;
         font-size: 20px;
-        
-        
+
+
     }
-    .navbar li a{
-        
+
+    .navbar li a {
+
         color: white;
         text-decoration: none;
         padding: 30px;
-        
+
     }
-    .navbar li a:hover, .navbar li a.active{
-        
-        
+
+    .navbar li a:hover,
+    .navbar li a.active {
+
+
         text-decoration: underline;
-        color: aquamarine;
-        
-        
+        color: blueviolet;
+
+
     }
-    
+
+    .btn {
+        margin: 0px 10px;
+        background-color: black;
+        color: white;
+        padding: 4px 5px;
+        border: 2px solid brown;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: 'Lora', serif;
+    }
+
+    .btn:hover {
+        color: blueviolet;
+    }
+
+    .container {
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 40%;
+        margin: 180px 390px;
+        padding: 42px 49px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 350px;
+        padding: 5px;
+        border: 2px solid black;
+        margin: 5px auto;
+        border-radius: 10px;
+        font-size: 20px;
+        font-family: 'Lora', serif;
+    }
+    .form-group input:hover{
+        background-color: blueviolet;
+        color: black;
+    }
+    .container  btn{
+        width: 40%;
+        margin: 2px 4px;
+        padding: 2px 2px;
+
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 20%;
+        margin: 25px auto;
+    }
 </style>
 
 <body>
@@ -87,15 +159,16 @@
 
         <div class="left">
             <img src="img/gymlogo.png" alt="">
-           
+            <div>RSD FITNESS</div>
+
 
         </div>
         <!-- Mid box for navbar -->
 
         <div class="Mid">
-        
+
             <ul class="navbar">
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Fitness Calc</a></li>
                 <li><a href="#">Contact</a></li>
@@ -105,11 +178,41 @@
 
         <!-- Right box for buttons -->
         <div class="right">
-            I am Right
+            <button class="btn">Customer Care</button>
+
+            <button class="btn">Mail Us</button>
 
         </div>
 
     </header>
+    <div class="container">
+        <h1>Build Yourself! Build Your Body!</h1>
+        <form action="nothing.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Full Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Weight">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Contact Number">
+            </div>
+            <div class="form-group">
+                <input type="date" name="" placeholder="Enter Your Date of Birth">
+                
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your City">
+               
+            </div>
+            <button class="btn">Submit</button>
+            
+        </form>
+    </div>
+    
 </body>
 
 </html>
